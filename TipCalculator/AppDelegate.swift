@@ -15,8 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    // Override point for customization after application launch.
+//    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//    let mainViewController = storyboard.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
+//    
+//    self.window?.rootViewController = configureNavigationController(rootViewController: mainViewController)
+//    window?.makeKeyAndVisible()
     return true
+  }
+  
+  func configureNavigationController(rootViewController rootViewController: UIViewController) -> UINavigationController {
+    let navigationController = UINavigationController(rootViewController: rootViewController)
+    
+    navigationController.navigationBar.barTintColor = UIColor(
+      red: CGFloat(254/255.0), green: CGFloat(129/255.0), blue: CGFloat(67/255.0), alpha: CGFloat(1.0))
+    navigationController.navigationBar.tintColor = UIColor.whiteColor()
+    navigationController.navigationBar.translucent = false
+    navigationController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Settings", style: UIBarButtonItemStyle.Plain, target: rootViewController, action: nil)
+    
+    return navigationController
   }
 
   func applicationWillResignActive(application: UIApplication) {

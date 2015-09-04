@@ -1,0 +1,27 @@
+
+/* Class = "UIBarButtonItem"; title = "⚙"; ObjectID = "1DQ-mP-Jkx"; */
+"1DQ-mP-Jkx.title" = "⚙";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "9mB-E9-kCL"; */
+"9mB-E9-kCL.text" = "$0";
+
+/* Class = "UISegmentedControl"; IlR-a8-mdP.segmentTitles[0] = "18%"; ObjectID = "IlR-a8-mdP"; */
+"IlR-a8-mdP.segmentTitles[0]" = "18%";
+
+/* Class = "UISegmentedControl"; IlR-a8-mdP.segmentTitles[1] = "20%"; ObjectID = "IlR-a8-mdP"; */
+"IlR-a8-mdP.segmentTitles[1]" = "20%";
+
+/* Class = "UISegmentedControl"; IlR-a8-mdP.segmentTitles[2] = "22%"; ObjectID = "IlR-a8-mdP"; */
+"IlR-a8-mdP.segmentTitles[2]" = "22%";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "LA9-qR-RZx"; */
+"LA9-qR-RZx.text" = "Total";
+
+/* Class = "UITextField"; placeholder = "$0.00"; ObjectID = "QVe-SW-W9k"; */
+"QVe-SW-W9k.placeholder" = "$0.00";
+
+/* Class = "UILabel"; text = "$0"; ObjectID = "rqu-Md-34W"; */
+"rqu-Md-34W.text" = "$0";
+
+/* Class = "UILabel"; text = "Tip"; ObjectID = "zXF-iN-2ry"; */
+"zXF-iN-2ry.text" = "Tip";

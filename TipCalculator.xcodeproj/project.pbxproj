@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F27D9F41B99711500E8D929 /* cogs-38px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F27D9F31B99711500E8D929 /* cogs-38px.png */; settings = {ASSET_TAGS = (); }; };
+		1F27D9F61B99726500E8D929 /* cogs-26px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F27D9F51B99726500E8D929 /* cogs-26px.png */; settings = {ASSET_TAGS = (); }; };
+		1F3743461B990803002ECAD8 /* 22-percent.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3743431B990803002ECAD8 /* 22-percent.png */; settings = {ASSET_TAGS = (); }; };
+		1F3743471B990803002ECAD8 /* 20-percent.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3743441B990803002ECAD8 /* 20-percent.png */; settings = {ASSET_TAGS = (); }; };
+		1F3743481B990803002ECAD8 /* 18-percent.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3743451B990803002ECAD8 /* 18-percent.png */; settings = {ASSET_TAGS = (); }; };
+		1F37434E1B99344D002ECAD8 /* hand-coins.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F37434D1B99344D002ECAD8 /* hand-coins.png */; settings = {ASSET_TAGS = (); }; };
+		1F3743581B993804002ECAD8 /* cogs-48px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F3743571B993804002ECAD8 /* cogs-48px.png */; settings = {ASSET_TAGS = (); }; };
+		1F37435B1B9939B6002ECAD8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3743591B9939B6002ECAD8 /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1F9236B51B995A2C0084EB19 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9236B41B995A2C0084EB19 /* UserPreferences.swift */; settings = {ASSET_TAGS = (); }; };
 		1FEB942A1B98D0910074BAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB94291B98D0910074BAF9 /* AppDelegate.swift */; };
 		1FEB942C1B98D0910074BAF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEB942B1B98D0910074BAF9 /* ViewController.swift */; };
 		1FEB942F1B98D0910074BAF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FEB942D1B98D0910074BAF9 /* Main.storyboard */; };
@@ -34,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F27D9F31B99711500E8D929 /* cogs-38px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cogs-38px.png"; sourceTree = "<group>"; };
+		1F27D9F51B99726500E8D929 /* cogs-26px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cogs-26px.png"; sourceTree = "<group>"; };
+		1F3743431B990803002ECAD8 /* 22-percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "22-percent.png"; sourceTree = "<group>"; };
+		1F3743441B990803002ECAD8 /* 20-percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-percent.png"; sourceTree = "<group>"; };
+		1F3743451B990803002ECAD8 /* 18-percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-percent.png"; sourceTree = "<group>"; };
+		1F37434A1B990FDB002ECAD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		1F37434D1B99344D002ECAD8 /* hand-coins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-coins.png"; sourceTree = "<group>"; };
+		1F3743571B993804002ECAD8 /* cogs-48px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cogs-48px.png"; sourceTree = "<group>"; };
+		1F3743591B9939B6002ECAD8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1F9236B41B995A2C0084EB19 /* UserPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		1FEB94261B98D0910074BAF9 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FEB94291B98D0910074BAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FEB942B1B98D0910074BAF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +93,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F3743421B9907EC002ECAD8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1F3743571B993804002ECAD8 /* cogs-48px.png */,
+				1F27D9F51B99726500E8D929 /* cogs-26px.png */,
+				1F27D9F31B99711500E8D929 /* cogs-38px.png */,
+				1F37434D1B99344D002ECAD8 /* hand-coins.png */,
+				1F3743431B990803002ECAD8 /* 22-percent.png */,
+				1F3743441B990803002ECAD8 /* 20-percent.png */,
+				1F3743451B990803002ECAD8 /* 18-percent.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		1FEB941D1B98D0910074BAF9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +130,15 @@
 		1FEB94281B98D0910074BAF9 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				1F3743421B9907EC002ECAD8 /* Images */,
 				1FEB94291B98D0910074BAF9 /* AppDelegate.swift */,
 				1FEB942B1B98D0910074BAF9 /* ViewController.swift */,
 				1FEB942D1B98D0910074BAF9 /* Main.storyboard */,
 				1FEB94301B98D0910074BAF9 /* Assets.xcassets */,
 				1FEB94321B98D0910074BAF9 /* LaunchScreen.storyboard */,
 				1FEB94351B98D0910074BAF9 /* Info.plist */,
+				1F3743591B9939B6002ECAD8 /* SettingsViewController.swift */,
+				1F9236B41B995A2C0084EB19 /* UserPreferences.swift */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -192,6 +228,7 @@
 				TargetAttributes = {
 					1FEB94251B98D0910074BAF9 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = YEFPT58Q89;
 					};
 					1FEB94391B98D0910074BAF9 = {
 						CreatedOnToolsVersion = 7.0;
@@ -229,8 +266,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FEB94341B98D0910074BAF9 /* LaunchScreen.storyboard in Resources */,
+				1F3743471B990803002ECAD8 /* 20-percent.png in Resources */,
 				1FEB94311B98D0910074BAF9 /* Assets.xcassets in Resources */,
 				1FEB942F1B98D0910074BAF9 /* Main.storyboard in Resources */,
+				1F37434E1B99344D002ECAD8 /* hand-coins.png in Resources */,
+				1F3743481B990803002ECAD8 /* 18-percent.png in Resources */,
+				1F27D9F41B99711500E8D929 /* cogs-38px.png in Resources */,
+				1F27D9F61B99726500E8D929 /* cogs-26px.png in Resources */,
+				1F3743461B990803002ECAD8 /* 22-percent.png in Resources */,
+				1F3743581B993804002ECAD8 /* cogs-48px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FEB942C1B98D0910074BAF9 /* ViewController.swift in Sources */,
+				1F9236B51B995A2C0084EB19 /* UserPreferences.swift in Sources */,
 				1FEB942A1B98D0910074BAF9 /* AppDelegate.swift in Sources */,
+				1F37435B1B9939B6002ECAD8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +342,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1FEB942E1B98D0910074BAF9 /* Base */,
+				1F37434A1B990FDB002ECAD8 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -396,10 +443,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andbutso.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -407,10 +458,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andbutso.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -481,6 +536,7 @@
 				1FEB94501B98D0910074BAF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FEB94511B98D0910074BAF9 /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +545,7 @@
 				1FEB94531B98D0910074BAF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FEB94541B98D0910074BAF9 /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +554,7 @@
 				1FEB94561B98D0910074BAF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
