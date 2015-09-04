@@ -24,7 +24,7 @@ import UIKit
   }
   
   let selectedFaceAlpha   = CGFloat(1.0)
-  let deselectedFaceAlpha = CGFloat(0.25)
+  let deselectedFaceAlpha = CGFloat(0.10)
   
   let defaultTipAmount = 0.2
   let availableLocales = [
@@ -68,13 +68,15 @@ import UIKit
   }
   
   func updateFaces() {
-    for (index, face) in faces.enumerate() {
-      if tipControl.selectedSegmentIndex == index {
-        face.alpha = selectedFaceAlpha
-      } else {
-        face.alpha = deselectedFaceAlpha
+    UIView.animateWithDuration(0.75, animations: {
+      for (index, face) in self.faces.enumerate() {
+        if self.tipControl.selectedSegmentIndex == index {
+          face.alpha = self.selectedFaceAlpha
+        } else {
+          face.alpha = self.deselectedFaceAlpha
+        }
       }
-    }
+    })
   }
   
   func updateDefaultTipValues() {
