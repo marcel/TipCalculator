@@ -58,18 +58,22 @@ import UIKit
     updateFaces()
     
     if let billAmount = billAsDouble() {
-      let tip   = billAmount * tipPercentage()
-      let total = billAmount + tip
-      
-      tipLabel.text   = formatCurrency(tip)
-      totalLabel.text = formatCurrency(total)
-      
-      var userPreferences = UserPreferences()
-      userPreferences.previousBill = billAmount
-      userPreferences.save()
+      updateTip(billAmount)
     } else {
       print("TODO: handle invalid value")
     }
+  }
+  
+  func updateTip(billAmount: Double) {
+    let tip   = billAmount * tipPercentage()
+    let total = billAmount + tip
+    
+    tipLabel.text   = formatCurrency(tip)
+    totalLabel.text = formatCurrency(total)
+    
+    var userPreferences = UserPreferences()
+    userPreferences.previousBill = billAmount
+    userPreferences.save()
   }
   
   func updateFaces() {
@@ -94,9 +98,10 @@ import UIKit
   
   func updateToPreviousTotal() {
     let userPreferences = UserPreferences()
-    
-    if userPreferences.previousBill != UserPreferences.DefaultBill {
-      billField.text = String(userPreferences.previousBill)
+    let previousBill = userPreferences.previousBill
+    if previousBill != UserPreferences.DefaultBill {
+      billField.text = String(previousBill)
+      updateTip(previousBill)
     }
   }
   
