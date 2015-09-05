@@ -99,7 +99,7 @@ import UIKit
   func updateToPreviousTotal() {
     let userPreferences = UserPreferences()
     let previousBill = userPreferences.previousBill
-    if previousBill != UserPreferences.DefaultBill {
+    if previousBill != UserPreferences.DefaultBill && userPreferences.billWasEnteredRecently() {
       billField.text = String(previousBill)
       updateTip(previousBill)
     }

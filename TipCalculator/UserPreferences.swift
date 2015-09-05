@@ -13,6 +13,7 @@ struct UserPreferences {
   
   let LocaleKey = "preferred_locale"
   let PreviousBill = "previous_bill"
+  let PreviousBillDate = "previous_bill_date"
   static let DefaultBill = 0.0
   
   enum TipPercentageKey: String {
@@ -33,7 +34,18 @@ struct UserPreferences {
     }
     
     set {
+      previousBillDate = NSDate.timeIntervalSinceReferenceDate()
       defaults.setDouble(newValue, forKey: PreviousBill)
+    }
+  }
+  
+  var previousBillDate: NSTimeInterval {
+    get {
+      return defaults.valueForKey(PreviousBillDate) as? Double ?? 0.0
+    }
+    
+    set {
+      defaults.setDouble(newValue, forKey: PreviousBillDate)
     }
   }
   
@@ -91,6 +103,11 @@ struct UserPreferences {
   
   func defaultTipPercentages() -> [Int] {
     return [lowTipPercentage, mediumTipPercentage, highTipPercentage]
+  }
+  
+  func billWasEnteredRecently() -> Bool {
+    let now = NSDate.timeIntervalSinceReferenceDate()
+    return (now - previousBillDate) < (10 * 60) // Ten minutes
   }
   
   func save() {
