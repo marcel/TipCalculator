@@ -12,6 +12,8 @@ struct UserPreferences {
   let defaults: NSUserDefaults
   
   let LocaleKey = "preferred_locale"
+  let PreviousBill = "previous_bill"
+  static let DefaultBill = 0.0
   
   enum TipPercentageKey: String {
     case LowTip
@@ -23,6 +25,16 @@ struct UserPreferences {
     case Low    = 18
     case Medium = 20
     case High   = 22
+  }
+  
+  var previousBill: Double {
+    get {
+      return defaults.valueForKey(PreviousBill) as? Double ?? UserPreferences.DefaultBill
+    }
+    
+    set {
+      defaults.setDouble(newValue, forKey: PreviousBill)
+    }
   }
   
   var preferredLocale: String {

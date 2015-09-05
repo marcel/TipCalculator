@@ -37,6 +37,7 @@ import UIKit
     billField.becomeFirstResponder()
     updateFaces()
     updateDefaultTipValues()
+    updateToPreviousTotal()
   }
   
   override func viewWillAppear(animated: Bool) {
@@ -62,6 +63,10 @@ import UIKit
       
       tipLabel.text   = formatCurrency(tip)
       totalLabel.text = formatCurrency(total)
+      
+      var userPreferences = UserPreferences()
+      userPreferences.previousBill = billAmount
+      userPreferences.save()
     } else {
       print("TODO: handle invalid value")
     }
@@ -84,6 +89,14 @@ import UIKit
     
     for (index, defaultTipAmount) in userPreferences.defaultTipPercentages().enumerate() {
       tipControl.setTitle(String(defaultTipAmount) + "%", forSegmentAtIndex: index)
+    }
+  }
+  
+  func updateToPreviousTotal() {
+    let userPreferences = UserPreferences()
+    
+    if userPreferences.previousBill != UserPreferences.DefaultBill {
+      billField.text = String(userPreferences.previousBill)
     }
   }
   
